@@ -1,6 +1,6 @@
 # GD Gestoría® — Website
 
-One-page website for **GD Gestoría®** (Lic. Graciela Durá, Mandataria Registral Automotor Matriculada).
+One-page website for **GD Gestoría®** (Lic. Graciela Duré, Mandataria Registral Automotor Matriculada).
 Static site (HTML + CSS + vanilla JS), no build step and no backend. All contact goes through WhatsApp.
 
 ## Structure

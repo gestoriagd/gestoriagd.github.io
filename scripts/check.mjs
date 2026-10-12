@@ -44,14 +44,15 @@ const required = [
   "Transferencias", "Informes de dominio", "Verificación policial", "Cédulas", "Chapas patente",
   "Prendas", "Infracciones y patentes", "Trámites ante Registros Seccionales", "Asesoría técnica registral",
   "Abogados", "Escribanía", "COBERTURA NACIONAL", "¿Estás lejos? Nosotros nos acercamos.",
-  "Lic. Graciela Durá", "11 5694-3375", "@GESTORIAGD.OFICIAL", "instagram-qr.jpeg",
+  "Lic. Graciela Duré", "11 5694-3375", "@GESTORIAGD.OFICIAL", "instagram-qr.jpeg",
   "SERIEDAD | COMPROMISO | ATENCIÓN PERSONALIZADA", "Marca registrada. Todos los derechos reservados.",
+  "¿Por qué solicitan primero un Informe de Dominio?",
   "class=\"wa-float\"",
 ];
 for (const text of required) check(html.includes(text), `Missing brief content: ${text}`);
 
 const faqCount = (html.match(/<details>/g) || []).length;
-check(faqCount === 8, `Expected 8 FAQ items, found ${faqCount}`);
+check(faqCount === 9, `Expected 9 FAQ items, found ${faqCount}`);
 const needCount = (html.match(/class="need-card/g) || []).length;
 check(needCount === 8, `Expected 8 "¿Qué trámite necesitás?" cards, found ${needCount}`);
 const serviceCount = (html.match(/class="service-card"/g) || []).length;
