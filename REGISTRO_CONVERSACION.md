@@ -51,3 +51,38 @@ Documento guardado localmente en el repositorio para que conserves el registro c
    - Settings > Pages > Source: *Deploy from a branch*, Branch: *main* / *(root)* > Save.
 4. **URL de acceso**:
    - `https://gestoriagd.github.io/gestoriagd/` (o si el repo se renombra a `gestoriagd.github.io`, la URL pasa a ser directamente `https://gestoriagd.github.io`).
+
+
+---
+
+## 5. Cómo vincular un Dominio Propio (ej. gestoriagd.com.ar)
+
+El día que se compre un dominio propio, se vincula en solo 2 pasos:
+
+### Paso A: En el proyecto local (con Git)
+1. Se crea un archivo llamado `CNAME` (sin extensión) con el dominio adentro:
+   ```powershell
+   Set-Content -Path CNAME -Value "www.gestoriagd.com.ar"
+   ```
+2. Se comitea y sube a GitHub:
+   ```powershell
+   git add CNAME
+   git commit -m "feat: add custom domain CNAME"
+   git push origin main
+   ```
+
+### Paso B: En el proveedor de DNS donde compraste el dominio (NIC.ar, DonWeb, etc.)
+En la zona DNS se agregan estos registros apuntando a GitHub Pages:
+- **Registro CNAME**:
+  - Host: `www`
+  - Destino: `gestoriagd.github.io`
+- **Registros A** (para acceso sin `www`):
+  - Host: `@` (o en blanco)
+  - IPs:
+    - `185.199.108.153`
+    - `185.199.109.153`
+    - `185.199.110.153`
+    - `185.199.111.153`
+
+### Paso C: HTTPS automático
+En GitHub (**Settings > Pages**), una vez propagados los DNS, se tilda **Enforce HTTPS** y GitHub emite el certificado SSL (candado verde) sin costo.
