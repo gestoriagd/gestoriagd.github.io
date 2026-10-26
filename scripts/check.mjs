@@ -42,7 +42,7 @@ const required = [
   "Soluciones ágiles y confiables para que sigas en movimiento.",
   "Consultar por WhatsApp", "Ver servicios", "Solicitar turno", "Consultar mi caso",
   "Transferencias", "Informes de dominio", "Verificación policial", "Cédulas", "Chapas patente",
-  "Prendas", "Infracciones y patentes", "Trámites ante Registros Seccionales", "Asesoría técnica registral",
+  "Prendas", "Patentes", "Infracciones de tránsito", "SUATS", "Trámites ante Registros Seccionales", "Asesoría técnica registral",
   "Abogados", "Escribanía", "COBERTURA NACIONAL", "¿Estás lejos? Nosotros nos acercamos.",
   "Lic. Graciela Duré", "11 5694-3375", "@GESTORIAGD.OFICIAL", "instagram-qr.jpeg",
   "SERIEDAD | COMPROMISO | ATENCIÓN PERSONALIZADA", "Marca registrada. Todos los derechos reservados.",
@@ -52,11 +52,11 @@ const required = [
 for (const text of required) check(html.includes(text), `Missing brief content: ${text}`);
 
 const faqCount = (html.match(/<details>/g) || []).length;
-check(faqCount === 9, `Expected 9 FAQ items, found ${faqCount}`);
+check(faqCount === 11, `Expected 11 FAQ items, found ${faqCount}`);
 const needCount = (html.match(/class="need-card/g) || []).length;
 check(needCount === 8, `Expected 8 "¿Qué trámite necesitás?" cards, found ${needCount}`);
-const serviceCount = (html.match(/class="service-card"/g) || []).length;
-check(serviceCount === 9, `Expected 9 service cards, found ${serviceCount}`);
+const serviceCount = (html.match(/class="service-card[ "]/g) || []).length;
+check(serviceCount === 10, `Expected 10 service cards, found ${serviceCount}`);
 
 // 5. Images have alt attributes.
 for (const [tag] of html.matchAll(/<img[^>]*>/g)) check(/\salt="/.test(tag), `Image without alt: ${tag}`);

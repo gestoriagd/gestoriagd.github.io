@@ -40,3 +40,27 @@ document.addEventListener("keydown", (event) => {
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = String(new Date().getFullYear());
 });
+
+// Header: shadow after scrolling and highlight the pill of the section in view.
+const header = document.querySelector(".site-header");
+const navLinks = [...document.querySelectorAll(".site-nav ul a")];
+const spyTargets = navLinks
+  .map((link) => ({ link, section: document.querySelector(link.getAttribute("href")) }))
+  .filter((item) => item.section);
+
+function updateHeader() {
+  header.classList.toggle("is-scrolled", window.scrollY > 8);
+  const line = window.scrollY + header.offsetHeight + 80;
+  let current = null;
+  spyTargets.forEach((item) => {
+    if (item.section.offsetTop <= line) current = item;
+  });
+  navLinks.forEach((link) => {
+    const active = current && current.link === link;
+    link.classList.toggle("is-active", Boolean(active));
+    if (active) link.setAttribute("aria-current", "true");
+    else link.removeAttribute("aria-current");
+  });
+}
+window.addEventListener("scroll", updateHeader, { passive: true });
+updateHeader();
