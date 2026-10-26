@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GD Gestoría® | Mandataria Registral Automotor Matriculada</title>
   <meta name="description" content="GD Gestoría® — Lic. Graciela Duré, Mandataria Registral Automotor Matriculada. Transferencias, informes de dominio, verificación policial, cédulas, chapas patente, prendas y asesoría técnica registral. Cobertura nacional.">
-  <meta name="theme-color" content="#0b2a5b">
+  <meta name="theme-color" content="#042f62">
   <link rel="icon" href="assets/logo.jpeg" type="image/jpeg">
   <link rel="apple-touch-icon" href="assets/logo.jpeg">
 
@@ -45,6 +45,7 @@
     <symbol id="i-id" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M5 16c.5-1.2 1.6-2 3-2s2.5.8 3 2"/><path d="M14 10h5M14 14h3"/></g></symbol>
     <symbol id="i-plate" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 9.5h20"/><path d="M6 14h2M10 14h4M16 14h2"/></g></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1"/></g></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></g></symbol>
     <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></g></symbol>
     <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10M19 21V10M9 21v-7M15 21v-7"/><path d="m2 10 10-6 10 6"/></g></symbol>
     <symbol id="i-compass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z"/></g></symbol>
@@ -80,9 +81,6 @@
           <li><a href="#faq">Preguntas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a class="btn btn-wa btn-sm nav-cta" data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-          <svg class="icon"><use href="#i-whatsapp"/></svg> WhatsApp
-        </a>
       </nav>
     </div>
   </header>
@@ -97,9 +95,6 @@
           <p class="hero-sub">Mandataria Registral Automotor Matriculada</p>
           <p class="hero-lead">Soluciones ágiles y confiables para que sigas en movimiento.</p>
           <div class="hero-actions">
-            <a class="btn btn-wa btn-lg" data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-              <svg class="icon"><use href="#i-whatsapp"/></svg> Consultar por WhatsApp
-            </a>
             <a class="btn btn-outline-light btn-lg" href="#servicios">Ver servicios</a>
           </div>
           <ul class="hero-pills" aria-label="Pilares">
@@ -123,7 +118,7 @@
         <header class="section-head">
           <p class="kicker">Empezá por acá</p>
           <h2 id="tramites-title">¿Qué trámite necesitás?</h2>
-          <p>Elegí tu situación y te escribimos por WhatsApp con la consulta ya armada.</p>
+          <p>Hacé clic en la opción que corresponda a tu situación y accedé directamente a WhatsApp, con la consulta ya armada.</p>
         </header>
         <ul class="need-grid">
           <li><a class="need-card" data-wa="Quiero transferir un vehículo." href="https://wa.me/5491156943375" target="_blank" rel="noopener"><svg class="icon"><use href="#i-car"/></svg><span>Quiero transferir un vehículo</span><svg class="icon arrow"><use href="#i-arrow"/></svg></a></li>
@@ -177,11 +172,16 @@
             <h3>Prendas</h3>
             <p>Inscripción y cancelación de prendas.</p>
           </article>
-          <article class="service-card">
+          <a class="service-card service-card--link" href="#patentes">
+            <span class="service-icon"><svg class="icon"><use href="#i-file"/></svg></span>
+            <h3>Patentes</h3>
+            <p>Altas, bajas y regularización tributaria. Consulta y análisis de deuda.</p>
+          </a>
+          <a class="service-card service-card--link" href="#infracciones">
             <span class="service-icon"><svg class="icon"><use href="#i-alert"/></svg></span>
-            <h3>Infracciones y patentes</h3>
-            <p>Consulta y análisis de infracciones y patentes.</p>
-          </article>
+            <h3>Infracciones de tránsito</h3>
+            <p>Informes oficiales desde el sistema SUATS. Consulta, análisis y gestión de infracciones.</p>
+          </a>
           <article class="service-card">
             <span class="service-icon"><svg class="icon"><use href="#i-building"/></svg></span>
             <h3>Trámites ante Registros Seccionales</h3>
@@ -196,6 +196,46 @@
       </div>
     </section>
 
+    <!-- ===== PATENTES E INFRACCIONES DE TRÁNSITO ===== -->
+    <section class="section section--alt" id="patentes-infracciones" aria-labelledby="pi-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Patentes e infracciones</p>
+          <h2 id="pi-title">¿Tenés deudas de patentes o infracciones de tránsito?</h2>
+          <p class="lead">Analizamos la situación de tu vehículo y te orientamos sobre las alternativas disponibles.</p>
+        </header>
+        <div class="split-cards">
+          <article class="info-panel" id="patentes">
+            <h3>Patentes - Altas, bajas y regularización</h3>
+            <p>Gestionamos altas y bajas tributarias de patentes, consultas de deuda y asesoramiento para regularizar la situación del vehículo. Analizamos cada caso y orientamos sobre los pasos necesarios ante el organismo correspondiente.</p>
+            <p><strong>Incluye:</strong></p>
+            <ul class="check-list">
+              <li>Alta tributaria de patente.</li>
+              <li>Baja tributaria de patente.</li>
+              <li>Consulta y análisis de deuda.</li>
+              <li>Asesoramiento para regularización.</li>
+              <li>Análisis de situaciones particulares.</li>
+            </ul>
+            <a class="btn btn-primary" href="#contacto">Consultar por patentes</a>
+          </article>
+          <article class="info-panel" id="infracciones">
+            <h3>Infracciones de tránsito</h3>
+            <p class="suats-highlight"><svg class="icon"><use href="#i-shield"/></svg> Informe de infracciones desde el sistema oficial SUATS</p>
+            <p>Informes oficiales desde el sistema SUATS. Consulta y análisis de infracciones de tránsito, con asesoramiento sobre la situación del vehículo y las alternativas de gestión según cada caso.</p>
+            <p><strong>Servicios incluidos:</strong></p>
+            <ul class="check-list">
+              <li>Informe de infracciones desde el sistema oficial SUATS.</li>
+              <li>Consulta y análisis de multas.</li>
+              <li>Revisión de la situación del vehículo.</li>
+              <li>Asesoramiento sobre las alternativas disponibles.</li>
+              <li>Gestión según cada caso.</li>
+            </ul>
+            <a class="btn btn-primary" href="#contacto">Consultar por infracciones</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== DESTACADO: VERIFICACIÓN POLICIAL ===== -->
     <section class="feature feature--gold" aria-labelledby="verificacion-title">
       <div class="container feature-inner">
@@ -205,9 +245,7 @@
           <h2 id="verificacion-title">¿Necesitás realizar la Verificación Policial?</h2>
           <p>Gestionamos el turno y te asesoramos sobre la documentación necesaria.</p>
         </div>
-        <a class="btn btn-dark btn-lg" data-wa="Quisiera solicitar un turno para la Verificación Policial." href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-          <svg class="icon"><use href="#i-whatsapp"/></svg> Solicitar turno
-        </a>
+        <a class="btn btn-dark btn-lg" href="#contacto">Solicitar turno</a>
       </div>
     </section>
 
@@ -218,9 +256,7 @@
           <p class="kicker">Asesoría técnica registral</p>
           <h2 id="asesoria-title">¿No sabés qué trámite corresponde?</h2>
           <p class="lead">¿Tenés documentación incompleta o una situación particular con tu vehículo? Analizamos tu caso y te orientamos sobre los pasos a seguir.</p>
-          <a class="btn btn-primary btn-lg" data-wa="Quisiera consultar mi caso particular." href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-            <svg class="icon"><use href="#i-whatsapp"/></svg> Consultar mi caso
-          </a>
+          <a class="btn btn-primary btn-lg" href="#contacto">Consultar mi caso</a>
         </div>
         <ol class="steps" aria-label="Cómo trabajamos">
           <li><strong>Nos contás tu situación</strong><span>Por WhatsApp, con la documentación que tengas.</span></li>
@@ -282,7 +318,7 @@
             <circle cx="160" cy="160" r="150" fill="url(#glow)"/>
             <circle cx="160" cy="160" r="110" fill="none" stroke="#0f3d7a" stroke-opacity=".15" stroke-dasharray="4 6"/>
             <circle cx="160" cy="160" r="60" fill="none" stroke="#0f3d7a" stroke-opacity=".15" stroke-dasharray="4 6"/>
-            <g stroke="#f5b81c" stroke-width="2" stroke-opacity=".8">
+            <g stroke="#ffbc13" stroke-width="2" stroke-opacity=".8">
               <line x1="160" y1="160" x2="95" y2="62"/>
               <line x1="160" y1="160" x2="242" y2="80"/>
               <line x1="160" y1="160" x2="262" y2="190"/>
@@ -294,7 +330,7 @@
               <circle cx="95" cy="62" r="8"/><circle cx="242" cy="80" r="8"/><circle cx="262" cy="190" r="8"/>
               <circle cx="205" cy="268" r="8"/><circle cx="88" cy="246" r="8"/><circle cx="52" cy="150" r="8"/>
             </g>
-            <circle cx="160" cy="160" r="26" fill="#0b2a5b" stroke="#f5b81c" stroke-width="4"/>
+            <circle cx="160" cy="160" r="26" fill="#042f62" stroke="#ffbc13" stroke-width="4"/>
             <text x="160" y="167" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="20" fill="#fff">GD</text>
           </svg>
         </div>
@@ -356,7 +392,15 @@
           </details>
           <details>
             <summary>¿Cómo puedo consultar multas e infracciones?</summary>
-            <p>Realizamos la consulta y el análisis de infracciones y deudas de patentes asociadas al vehículo, y te explicamos qué opciones tenés en cada caso.</p>
+            <p>Obtenemos el informe de infracciones desde el sistema oficial SUATS, realizamos el análisis de las multas asociadas al vehículo y te explicamos qué alternativas tenés en cada caso.</p>
+          </details>
+          <details>
+            <summary>¿Qué consecuencias puede tener una deuda de patentes?</summary>
+            <p>Una deuda puede generar inconvenientes en determinadas gestiones, por lo que conviene verificar la situación tributaria antes de realizar una operación sobre el vehículo.</p>
+          </details>
+          <details>
+            <summary>¿La deuda de patentes puede afectar al seguro?</summary>
+            <p>La existencia de deuda o una situación tributaria irregular puede generar inconvenientes en determinadas gestiones y, según el caso y las condiciones de la póliza, afectar la gestión de un siniestro. Se recomienda consultar con la aseguradora.</p>
           </details>
           <details>
             <summary>¿Puedo consultar antes de comprar un auto o una moto?</summary>
@@ -367,39 +411,48 @@
             <p>Contanos tu situación. Analizamos el caso, te orientamos sobre el trámite que corresponde y, si hace falta intervención de abogados o escribanía, te derivamos a profesionales de confianza de nuestra red.</p>
           </details>
         </div>
-        <p class="faq-more">¿No encontrás tu pregunta? <a data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+        <p class="faq-more">¿No encontrás tu pregunta? <a href="#contacto">Escribinos</a>.</p>
       </div>
     </section>
 
     <!-- ===== CONTACTO ===== -->
     <section class="section section--navy" id="contacto" aria-labelledby="contacto-title">
-      <div class="container contact">
-        <div class="contact-copy">
+      <div class="container">
+        <header class="section-head section-head--light">
           <p class="kicker kicker--gold">Contacto</p>
           <h2 id="contacto-title">Tu trámite, en buenas manos.</h2>
-          <p>Escribinos y te respondemos a la brevedad.</p>
-          <ul class="contact-list">
-            <li>
-              <a class="contact-item" data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-                <span class="contact-icon contact-icon--wa"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
-                <span><small>WhatsApp</small><strong>11 5694-3375</strong></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-item" href="https://www.instagram.com/gestoriagd.oficial/" target="_blank" rel="noopener">
-                <span class="contact-icon contact-icon--ig"><svg class="icon"><use href="#i-instagram"/></svg></span>
-                <span><small>Instagram</small><strong>@GESTORIAGD.OFICIAL</strong></span>
-              </a>
-            </li>
-          </ul>
-          <a class="btn btn-wa btn-lg" data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">
-            <svg class="icon"><use href="#i-whatsapp"/></svg> Consultar por WhatsApp
+          <p>Elegí tu canal preferido —hacé clic o escaneá el código QR— y te respondemos a la brevedad.</p>
+        </header>
+        <div class="contact-channels">
+          <a class="contact-card contact-card--wa" data-wa href="https://wa.me/5491156943375" target="_blank" rel="noopener">
+            <div class="contact-card-head">
+              <span class="contact-icon contact-icon--wa"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+              <div class="contact-card-meta">
+                <small>Atención directa por WhatsApp</small>
+                <strong>11 5694-3375</strong>
+              </div>
+              <svg class="icon contact-card-arrow"><use href="#i-arrow"/></svg>
+            </div>
+            <div class="contact-card-qr">
+              <img src="assets/whatsapp-qr.svg" alt="Código QR de WhatsApp 11 5694-3375" width="640" height="640" loading="lazy">
+            </div>
+            <p class="contact-card-foot">Hacé clic en la tarjeta o escaneá el código con tu celular</p>
+          </a>
+          <a class="contact-card contact-card--ig" href="https://www.instagram.com/gestoriagd.oficial/" target="_blank" rel="noopener">
+            <div class="contact-card-head">
+              <span class="contact-icon contact-icon--ig"><svg class="icon"><use href="#i-instagram"/></svg></span>
+              <div class="contact-card-meta">
+                <small>Seguinos en Instagram</small>
+                <strong>@GESTORIAGD.OFICIAL</strong>
+              </div>
+              <svg class="icon contact-card-arrow"><use href="#i-arrow"/></svg>
+            </div>
+            <div class="contact-card-qr">
+              <img src="assets/instagram-qr.jpeg" alt="Código QR del Instagram @gestoriagd.oficial" width="640" height="640" loading="lazy">
+            </div>
+            <p class="contact-card-foot">Hacé clic en la tarjeta o escaneá el código con tu celular</p>
           </a>
         </div>
-        <figure class="qr-card">
-          <img src="assets/instagram-qr.jpeg" alt="Código QR del Instagram @gestoriagd.oficial" width="830" height="780" loading="lazy">
-          <figcaption>Escaneá y seguinos en Instagram</figcaption>
-        </figure>
       </div>
     </section>
   </main>
